@@ -14,6 +14,11 @@ const MainDisplay = styled.div`
     font-weight: bold;
     overflow: auto hidden;
     scrollbar-color: white black;
+
+    @media screen and (height < 502px) {
+        height: 2.2rem;
+        font-size: 1.5rem;
+    }
 `
 
 const LastDisplay = styled.div`
@@ -23,6 +28,11 @@ const LastDisplay = styled.div`
     font-weight: bold;
     overflow: auto hidden;
     scrollbar-color: grey black;
+
+    @media screen and (height < 502px) {
+        height: 1.7rem;
+        font-size: 1rem;
+    }
 `
 
 export default function Display({expression, lastExpression}: {expression: string, lastExpression: string}) {

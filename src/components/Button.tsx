@@ -25,6 +25,10 @@ const StyledButton = styled.button<{$type: string, $isActive: boolean, id: strin
     align-items: center;
     transition: background-color 0.1s linear;
     cursor: pointer;
+
+    @media screen and (height < 502px) {
+        font-size: 1rem;
+    }
 `
 
 type ButtonProps = {

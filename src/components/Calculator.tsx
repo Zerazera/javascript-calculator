@@ -12,7 +12,12 @@ const StyledCalculator = styled.div`
     background-color: black;
     width: 300px;
     aspect-ratio: 3 / 4.2;
-    border-radius:5px;
+    border-radius: 5px;
+
+    @media screen and (height < 502px) {
+        width: 170px;
+        padding: 6%;
+    }
 `
 
 export default function Calculator() {

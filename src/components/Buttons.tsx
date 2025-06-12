@@ -15,7 +15,6 @@ export default function Buttons({updateExpression}: {updateExpression: (btnInfo:
     const {addKeyMapping, removeKeyMapping} = useKeymap('keydown')
 
     return (
-
         <StyledButtons>
             {buttonsInfo.map(buttonInfo => buttonInfo.type === 'placeholder' ? 
                 <div key={buttonInfo.id} /> : 
