@@ -22,6 +22,8 @@ const Main = styled.main`
   align-items: center;
 `
 
+const Section = Main.withComponent('section')
+
 const UnorderedList = styled.ul`
   font-size: 1.2rem;
 
@@ -41,10 +43,10 @@ export default function App() {
         <Title>Javascript Calculator</Title>
       </header>
       <Main>
-        <section>
+        <Section>
           <Calculator />
-        </section>
-        <section>
+        </Section>
+        <Section>
           <UnorderedList>
             <li>Use the keyboard:</li>
             <li>AC - Space</li>
@@ -54,7 +56,7 @@ export default function App() {
             <li>= - = or Enter</li>
             <li>All other keys map to the same key on the keyboard.</li>
           </UnorderedList>
-        </section>
+        </Section>
       </Main>
     </Body>
   )
