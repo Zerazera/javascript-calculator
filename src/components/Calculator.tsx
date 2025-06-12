@@ -16,7 +16,7 @@ const StyledCalculator = styled.div`
 
     @media screen and (height < 502px) {
         width: 170px;
-        padding: 6%;
+        padding: 5%;
     }
 `
 
